@@ -1,0 +1,58 @@
+@import "~bootstrap/scss/bootstrap";
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.border-w-5 {
+  border-width: 5px !important;
+}
+.border-w-2 {
+  border-width: 2px !important;
+}
+
+.nav-link.active {
+  color: #fff;
+}
+
+.ff-new-courier {
+  font-family: "Courier New", Courier, monospace;
+}
+
+.page-enter-active {
+  display: none;
+}
+
+.page-enter-done {
+  animation: enterPage 0.3s forwards;
+}
+
+@keyframes enterPage {
+  from {
+    opacity: 0;
+    transform: scale(1.1);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.page-exit {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.page-exit-active {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 300ms, transform 300ms;
+}

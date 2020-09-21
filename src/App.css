@@ -1,0 +1,24 @@
+.alert {
+  transition: opacity 0.3s;
+}
+
+.alert-enter {
+  opacity: 0;
+}
+
+.alert-enter-active {
+  opacity: 1;
+}
+
+.alert-exit {
+  opacity: 0;
+}
+
+.alert-exit-active {
+  opacity: 0;
+}
+
+.navbar-fallback {
+  height: 58px;
+  background-color: #6c757d;
+}
